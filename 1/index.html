@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <select name="select-option" id="selectcontrol" onchange="control(value)">
+                <option value="fname">first name</option>
+                <option value="lname" selected>last name</option>
+                <option value="age">age</option>
+            </select>
+        </div>
+       <div class="div">
+            <input type="radio" id="fname" name="sort" value="fname" onchange="control('fname')">
+            <label for="fname">firt name</label>
+            <input type="radio" id="lname" name="sort" value="lname" onchange="control('lname')"    checked>
+            <label for="lname">last name</label>
+            <input type="radio" id="age" name="sort"  value="age"    onchange="control('age')">
+            <label for="age">age</label>
+       </div>
+    </div>
+    <script src="JS.js"></script>
+</body>
+</html>
